@@ -1,0 +1,134 @@
+.contact-us {
+	min-height: 110vh;
+	overflow: hidden;
+	background-color: var(--background-color-1);
+
+	font-family: "Druk Cyr";
+	font-weight: 900;
+	letter-spacing: -0.07;
+	line-height: 0.85;
+	text-align: left;
+	color: var(--text-colors-1);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.footer,
+	.header {
+		position: relative;
+	}
+	&__title {
+		font-size: 0.75em;
+		text-transform: uppercase;
+		text-align: center;
+		line-height: 104%;
+		letter-spacing: 7.5px;
+	}
+	&__form-container {
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		form {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+	}
+
+	&__form-group {
+		margin-bottom: 1rem;
+		font-family: "Montserrat", sans-serif;
+		font-size: 0.125em;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 120%;
+		letter-spacing: 1.25px;
+		width: 100%;
+	}
+	&__form-wrapper {
+		width: 100%;
+	}
+	&__form-group label {
+		display: block;
+		margin-bottom: 1rem;
+	}
+
+	&__form-group input,
+	&__form-group textarea {
+		font-size: 0.75em;
+		color: white;
+		width: 100%;
+		padding: 1em;
+		border-radius: 60px;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		background: #202020;
+	}
+	&__form-group textarea {
+		border-radius: 30px;
+		min-height: 175px;
+		resize: none;
+	}
+	&__response-message {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 0.1em;
+		text-align: center;
+		color: rgb(188, 0, 0);
+		font-weight: 600;
+	}
+	&__button {
+		z-index: 10;
+	}
+}
+@media (min-width: 1920px) {
+	.contact-us {
+		line-height: 0.73;
+	}
+}
+@media (min-width: 1024px) and (max-width: 1920px) {
+	.contact-us {
+		line-height: 0.77;
+		font-size: 10.41667vw;
+	}
+}
+
+@media (min-width: 768px) {
+	.contact-us {
+		font-size: 13.54167vw;
+		&__form-wrapper {
+			display: flex;
+			gap: 0.1em;
+		}
+		&__form-container {
+			width: 50vw;
+		}
+		&__form-group label {
+			font-size: 1em;
+		}
+		&__form-group input,
+		&__form-group textarea {
+			font-size: 0.75em;
+		}
+		&__form-group {
+			&_email,
+			&_phone {
+				width: 50%;
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	.contact-us {
+		font-size: 10vw;
+		&__form-container {
+			width: 80vw;
+		}
+		&__form-group label {
+			font-size: 15px;
+		}
+		&__form-group input,
+		&__form-group textarea {
+			font-size: 15px;
+		}
+	}
+}

@@ -1,0 +1,257 @@
+.crafting-careers {
+	text-transform: uppercase;
+	z-index: 100;
+	margin-top: -200vh;
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__wrapper {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+	}
+	&__title {
+		text-wrap: nowrap;
+	}
+	&__text {
+		position: relative;
+		line-height: 120%;
+	}
+	&__button {
+		z-index: 10;
+		cursor: pointer;
+		position: relative;
+	}
+}
+
+@media (min-width: 1072px) {
+	.crafting-careers {
+		min-height: min-content;
+		&__wrapper {
+			gap: 50px;
+		}
+		&__text {
+			width: 60vw;
+			font-size: 0.18em;
+			font-weight: 1000;
+			letter-spacing: 0.05em;
+			text-align: center;
+		}
+	}
+}
+
+@media (max-width: 1072px) {
+	.crafting-careers {
+		min-height: max-content;
+		font-size: 13.54167vw;
+		&__wrapper {
+			gap: 50px;
+		}
+		&__text {
+			width: 80vw;
+			font-size: 0.3em;
+		}
+	}
+}
+@media (min-width: 1640px) {
+	.crafting-careers {
+		text-transform: uppercase;
+		margin-top: -200vh;
+		position: relative;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		&__wrapper {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			width: 1195px;
+			height: 785px;
+			padding: 0px 68px 0px 68px;
+			gap: 102px;
+		}
+		&__title {
+			width: 1059px;
+			height: 302px;
+			font-size: 174px;
+			font-weight: 900;
+			line-height: 174px;
+			letter-spacing: 0.02em;
+		}
+		&__text {
+			display: flex;
+			align-items: center;
+			width: 858px;
+			height: 296px;
+			gap: 0px;
+
+			font-size: 40px;
+			font-weight: 1000;
+			line-height: 48px;
+			letter-spacing: 0.05em;
+			text-align: center;
+		}
+	}
+}
+@media (max-width: 1640px) and (min-width: 1240px) {
+	.crafting-careers {
+		text-transform: uppercase;
+		margin-top: -200vh;
+		position: relative;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		&__wrapper {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			width: 1438px;
+			height: 873px;
+			padding: 0px 68px 0px 68px;
+			gap: 52px;
+		}
+		&__title {
+			font-size: 164px;
+			font-weight: 900;
+			line-height: 164px;
+			letter-spacing: 0.02em;
+			width: 1059px;
+			height: 288px;
+			gap: 44px;
+		}
+		&__text {
+			width: 858px;
+			height: 296px;
+			gap: 0px;
+			display: flex;
+			align-items: center;
+			font-size: 40px;
+			font-weight: 1000;
+			line-height: 48px;
+			letter-spacing: 0.05em;
+			text-align: center;
+		}
+	}
+}
+@media (max-width: 1240px) and (min-width: 1072px) {
+	.crafting-careers {
+		text-transform: uppercase;
+		margin-top: -200vh;
+		position: relative;
+		padding: 3vh 3vw;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		&__wrapper {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			justify-content: center;
+		}
+		&__title {
+			width: 1144px;
+			height: 268px;
+			gap: 44px;
+			font-size: 150px;
+			font-weight: 900;
+			line-height: 150px;
+			letter-spacing: 0.02em;
+		}
+		&__text {
+			width: 641px;
+			height: 296px;
+			gap: 0px;
+
+			font-size: 32px;
+			font-weight: 1000;
+			line-height: 38.4px;
+			letter-spacing: 0.05em;
+			text-align: center;
+			display: flex;
+			align-items: center;
+		}
+	}
+}
+@media (max-width: 1072px) and (min-width: 768px) {
+	.crafting-careers {
+		text-transform: uppercase;
+		margin-top: -200vh;
+		position: relative;
+		padding: 3vh 3vw;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		&__wrapper {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			justify-content: center;
+		}
+		&__title {
+			max-width: 770px;
+			width: 770px;
+			height: 164px;
+			gap: 16px;
+			font-size: 100px;
+			font-weight: 900;
+			line-height: 100px;
+			letter-spacing: 0.02em;
+		}
+		&__text {
+			width: 641px;
+			height: 296px;
+			gap: 0px;
+			font-size: 32px;
+			font-weight: 1000;
+			line-height: 38.4px;
+			letter-spacing: 0.05em;
+			text-align: center;
+			display: flex;
+			align-items: center;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.crafting-careers {
+		text-transform: uppercase;
+		margin-top: -200vh;
+		position: relative;
+		padding: 3vh 3vw;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		&__wrapper {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			justify-content: center;
+		}
+		&__title {
+			font-size: 50px;
+			font-weight: 900;
+			line-height: 50px;
+			letter-spacing: 0.02em;
+		}
+		&__text {
+			width: 214px;
+			height: 126px;
+			gap: 0px;
+			font-size: 16px;
+			font-weight: 1000;
+			line-height: 19.2px;
+			letter-spacing: 0.05em;
+			text-align: center;
+			display: flex;
+			align-items: center;
+		}
+	}
+}

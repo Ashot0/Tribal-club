@@ -1,0 +1,38 @@
+.home {
+	* {
+		scroll-behavior: smooth;
+	}
+	scroll-behavior: smooth;
+	background-color: var(--background-color-1);
+	font-family: "Druk Cyr";
+	font-size: 10vw;
+	font-weight: 900;
+	letter-spacing: -0.07;
+	line-height: 0.85;
+	text-align: left;
+	color: var(--text-colors-1);
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	.footer {
+		position: absolute;
+		bottom: 0;
+	}
+}
+
+@media (min-width: 1920px) {
+	.home {
+		line-height: 0.73;
+	}
+}
+@media (min-width: 1024px) {
+	.home {
+		line-height: 0.77;
+		font-size: 10.41667vw;
+	}
+}
+@media (min-width: 768px) {
+	.home {
+		font-size: 13.54167vw;
+	}
+}

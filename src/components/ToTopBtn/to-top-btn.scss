@@ -1,0 +1,27 @@
+.to-top-btn {
+	z-index: 300;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: var(--text-colors-2);
+	border: none;
+	color: white;
+
+	width: 2em;
+	height: 2em;
+	font-size: 3vh;
+	border-radius: 50%;
+	cursor: pointer;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: background-color 0.3s;
+	&__img {
+		width: 1.6em;
+		height: 1.6em;
+		padding: 0.4em;
+		rotate: -135deg;
+	}
+
+	&:hover {
+		background-color: var(--btn-colors-2);
+	}
+}

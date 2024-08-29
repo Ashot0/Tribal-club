@@ -1,0 +1,54 @@
+.services {
+	height: 1200vh;
+	overflow: hidden;
+	background-color: var(--background-color-1);
+	font-family: "Druk Cyr";
+	font-size: 10vw;
+	font-weight: 900;
+	letter-spacing: -0.07;
+	line-height: 0.85;
+	text-align: left;
+	color: var(--text-colors-1);
+	display: flex;
+	flex-direction: column;
+	&__scroll-container {
+		position: fixed;
+		max-height: 100vh;
+		overflow: hidden;
+	}
+	.header {
+		padding: 1.25vh 10vw;
+	}
+	.footer {
+		position: absolute;
+		top: 1182vh;
+		background-color: #202020;
+	}
+}
+@media (min-width: 1920px) {
+	.services {
+		line-height: 0.73;
+	}
+}
+@media (min-width: 1072px) {
+	.services {
+		line-height: 0.77;
+		font-size: 10.41667vw;
+		.footer {
+			background: rgba(#000000, 0);
+		}
+	}
+}
+@media (min-width: 768px) {
+	.services {
+		font-size: 13.54167vw;
+	}
+}
+@media (max-width: 1072px) {
+	.services {
+		.footer {
+			margin-top: 50px;
+			padding-top: 0;
+		}
+	}
+}

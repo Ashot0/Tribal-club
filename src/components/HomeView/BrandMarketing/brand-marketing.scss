@@ -1,0 +1,60 @@
+.brand-marketing {
+	width: 100vw;
+	height: 300vh;
+	position: relative;
+	&__wrapper {
+		position: sticky;
+		top: 0;
+		height: 100vh;
+		width: 100vw;
+	}
+	&__video {
+		z-index: 10;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		left: 50vw;
+		top: 50vh;
+		width: 90vw;
+		padding: 0 10vw;
+	}
+	&__text {
+		z-index: 20;
+		color: initial;
+		text-transform: uppercase;
+		filter: invert(1);
+		mix-blend-mode: difference;
+		&_left {
+			display: flex;
+			flex-direction: column;
+			justify-content: end;
+			top: 0vh;
+			height: 30vh;
+			position: absolute;
+			left: 1vw;
+		}
+
+		&_right {
+			text-align: right;
+			top: 50vh;
+			position: absolute;
+			right: 1vw;
+		}
+	}
+}
+@media (max-width: 750px) {
+	.brand-marketing {
+		&__video {
+			flex-direction: column;
+			height: 75vh;
+			padding: 0;
+			object-fit: cover;
+		}
+		&__text {
+			font-size: 2.3em;
+			&_left {
+				top: 0vh;
+				height: 49vh;
+			}
+		}
+	}
+}

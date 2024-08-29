@@ -1,0 +1,174 @@
+.services-block {
+	height: 20vh;
+	width: 100vw;
+	cursor: pointer;
+
+	&__bg,
+	&__wrapper,
+	&__image-box {
+		position: fixed;
+		width: 100vw;
+	}
+
+	&__bg {
+		top: 0;
+		z-index: 10;
+		height: 100%;
+		width: 100vw;
+		&1 {
+			z-index: 8;
+		}
+		&2 {
+			z-index: 7;
+		}
+		&3 {
+			z-index: 6;
+		}
+		&4 {
+			z-index: 5;
+		}
+		&5 {
+			z-index: 4;
+		}
+		&6 {
+			z-index: 3;
+		}
+		&7 {
+			z-index: 2;
+		}
+		&8 {
+			z-index: 1;
+		}
+	}
+
+	&__bg-img {
+		height: 110%;
+		width: 110vw;
+		object-fit: cover;
+	}
+
+	&__wrapper {
+		position: absolute;
+		pointer-events: none;
+		top: 0;
+		z-index: 11;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__left-text {
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		overflow: hidden;
+		padding: 0 0.5em 0 0.5em;
+	}
+
+	&__title,
+	&__text {
+		position: relative;
+		max-width: 25vw;
+		text-transform: uppercase;
+	}
+
+	&__title {
+		font-size: 0.4em;
+		font-weight: 900;
+		line-height: 100%;
+		letter-spacing: 5px;
+	}
+
+	&__text {
+		font-size: 0.19em;
+		font-weight: 700;
+		line-height: 120%;
+		letter-spacing: 2.4px;
+	}
+
+	&__image-box {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		max-width: 27vw;
+		max-height: 60vh;
+		width: 2.69em;
+		height: 3.49em;
+		transform: translate(-50%, -50%);
+	}
+
+	&__image {
+		object-position: center;
+		width: 102%;
+		max-width: 102%;
+		min-width: 102%;
+		margin-left: -1%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__num {
+		position: absolute;
+		right: 1.5em;
+		bottom: 22vh;
+		text-align: right;
+		font-size: 0.15em;
+		font-weight: 700;
+		line-height: 120%;
+		text-transform: uppercase;
+	}
+}
+@media (max-width: 1072px) {
+	.services-block {
+		&__wrapper {
+			margin-top: 50px;
+		}
+		&__image-box {
+			position: absolute;
+			left: 50%;
+			top: 35%;
+			max-width: 80vw;
+			max-height: 50vh;
+			width: 80vw;
+			height: 60vh;
+			transform: translate(-50%, -50%);
+		}
+		&__left-text {
+			position: absolute;
+			top: 70vh;
+			transform: translate(0, -50%);
+			padding: 0;
+		}
+		&__title,
+		&__text {
+			position: relative;
+			text-align: center;
+			max-width: 80vw;
+			width: 80vw;
+			margin: 10px 10vw;
+			text-transform: uppercase;
+		}
+		&__bg {
+			opacity: 0;
+		}
+		&__title {
+			* {
+				display: inline;
+			}
+			font-size: 25px;
+			font-weight: 700;
+			line-height: 100%;
+			letter-spacing: 1.5px;
+		}
+		&__text {
+			font-size: 15px;
+			font-weight: 700;
+			line-height: 100%;
+			letter-spacing: 1.5px;
+		}
+		&__num {
+			font-size: 20px;
+		}
+	}
+}
