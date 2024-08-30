@@ -9,11 +9,12 @@
 				playsinline
 				muted
 				src="@/assets/Hero/-098a-4dcc-943b-82921390a39a.mp4"
-				alt=""
+				alt="video"
 			/>
 			<div class="brand-marketing__text brand-marketing__text_left">
 				<p
 					v-for="(text, index) in textArr"
+					:key="index"
 					:class="[
 						'brand-marketing__left',
 						'blue-text_invert',
@@ -27,6 +28,7 @@
 			<div class="brand-marketing__text brand-marketing__text_right">
 				<p
 					v-for="(text, index) in textArr"
+					:key="index"
 					:class="[
 						'brand-marketing__right',
 						`brand-marketing__right${index + 1}`,

@@ -5,7 +5,7 @@
 			<p
 				v-for="(text, index) in textArrLeft"
 				:key="'left-' + index"
-				:class="'hero__left hero__left' + index"
+				:class="'hero__left hero__left_' + index"
 				v-html="text"
 			></p>
 		</div>
@@ -13,28 +13,28 @@
 			<p
 				v-for="(text, index) in textArrRight"
 				:key="'right-' + index"
-				:class="'hero__right hero__right' + index"
+				:class="'hero__right hero__right_' + index"
 				v-html="text"
 			></p>
 		</div>
 		<div class="hero__blocks blocks" ref="blocks">
 			<ImageFull
-				class="hero__block hero__block1"
+				class="hero__block hero__block_1"
 				ref="block1"
 				:picture="'1.jpg'"
 			/>
 			<ImageFull
-				class="hero__block hero__block2"
+				class="hero__block hero__block_2"
 				ref="block2"
 				:picture="'2.jpg'"
 			/>
 			<ImageFull
-				class="hero__block hero__block3"
+				class="hero__block hero__block_3"
 				ref="block3"
 				:picture="'3.jpg'"
 			/>
 			<ImageFull
-				class="hero__block hero__block4"
+				class="hero__block hero__block_4"
 				ref="block4"
 				:picture="'4.jpg'"
 			/>
@@ -93,7 +93,7 @@ export default {
 				const topIndex = 1.6 * blockIndex;
 				if (blockIndex !== 4) {
 					tlh.fromTo(
-						`.hero .hero__right${i}`,
+						`.hero .hero__right_${i}`,
 						{
 							fontSize: '1em',
 						},
@@ -103,13 +103,13 @@ export default {
 
 					tlh
 						.fromTo(
-							`.hero .hero__left${i}`,
+							`.hero .hero__left_${i}`,
 							{ top: '0em' },
 							{ height: '1.7em', duration: 12 },
 							'<'
 						)
 						.fromTo(
-							`.hero .hero__left${blockIndex}`,
+							`.hero .hero__left_${blockIndex}`,
 							{ height: '0em' },
 							{ height: '1.7em', duration: 12 },
 							'<'
@@ -123,14 +123,14 @@ export default {
 							'<'
 						)
 						.fromTo(
-							`.hero .hero__left${blockIndex}`,
+							`.hero .hero__left_${blockIndex}`,
 							{ fontSize: '0em' },
 							{ fontSize: '1em', duration: 12 },
 							'<'
 						);
 
 					tlh.fromTo(
-						`.hero .hero__right${i}`,
+						`.hero .hero__right_${i}`,
 						{ height: '1.6em' },
 						{ height: '0em', duration: 10 },
 						'-=0%'

@@ -8,7 +8,7 @@
 			muted
 			class="video-full__pic"
 			:src="require('@/assets/Hero/' + video)"
-			alt=""
+			alt="video"
 		/>
 	</div>
 </template>

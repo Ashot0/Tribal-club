@@ -1,11 +1,12 @@
 <template>
 	<button
-		:class="!max ? 'button' : 'max'"
-		:type="$props.type === null ? 'button' : $props.type"
+		class="button"
+		:class="!max || 'button__alternative'"
+		:type="type === null ? 'button' : type"
 	>
-		{{ $props.text }}
+		{{ text }}
 		<div class="button__img">
-			<img src="@/assets/icons/ArrowRightDown.svg" alt="" />
+			<img src="@/assets/icons/ArrowRightDown.svg" alt="button" />
 		</div>
 	</button>
 </template>

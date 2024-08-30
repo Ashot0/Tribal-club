@@ -6,14 +6,14 @@
 				<img
 					class="burger-menu__logo-img"
 					src="@/assets/icons/logo.png"
-					alt=""
+					alt="logo"
 				/>
 			</router-link>
 			<button class="burger-menu__close-btn" @click="closeMenu">
 				<img
 					class="burger-menu__close-btn-img"
 					src="@/assets/icons/CloseBtn.png"
-					alt=""
+					alt="close"
 				/>
 			</button>
 		</div>
@@ -42,13 +42,14 @@
 		</div>
 		<div class="burger-menu__footer">
 			<a href="mailto:Hello@tribalclub.com" class="burger-menu__email">
-				<img src="@/assets/icons/mail2.png" alt="" />Hello@tribalclub.com</a
+				<img src="@/assets/icons/mail2.png" alt="mail" />Hello@tribalclub.com</a
 			>
 			<a
 				href="https://maps.app.goo.gl/Bm92mcg2dnSpy24x8"
 				class="burger-menu__address"
 			>
-				<img src="@/assets/icons/map.png" alt="" />232 E 47th St, NY 10017, USA
+				<img src="@/assets/icons/map.png" alt="map" />232 E 47th St, NY 10017,
+				USA
 			</a>
 			<router-link
 				class="burger-menu__button"

@@ -1,6 +1,6 @@
 <template>
 	<button v-if="showButton" @click="scrollToTop" class="to-top-btn">
-		<img class="to-top-btn__img" src="@/assets/icons/Arrow.svg" alt="" />
+		<img class="to-top-btn__img" src="@/assets/icons/Arrow.svg" alt="button" />
 	</button>
 </template>
 

@@ -1,10 +1,14 @@
 <template>
 	<div class="header">
 		<router-link class="header__logo" to="/">
-			<img class="header__logo-img" src="@/assets/icons/logo.png" alt="" />
+			<img class="header__logo-img" src="@/assets/icons/logo.png" alt="logo" />
 		</router-link>
 		<button class="header__burger-button" type="button" @click="toggleMenu">
-			<img class="header__burger-img" src="@/assets/icons/burger.svg" alt="" />
+			<img
+				class="header__burger-img"
+				src="@/assets/icons/burger.svg"
+				alt="burger"
+			/>
 		</button>
 		<div class="header__menu">
 			<router-link to="/">About Us </router-link>

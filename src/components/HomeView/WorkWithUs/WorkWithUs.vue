@@ -1,6 +1,6 @@
 <template>
 	<div class="work-with-us">
-		<img class="work-with-us__img" src="@/assets/Hero/work.jpg" alt="" />
+		<img class="work-with-us__img" src="@/assets/Hero/work.jpg" alt="work" />
 		<div class="work-with-us__wrapper">
 			<div class="work-with-us__first-text">Start your journey</div>
 			<div class="work-with-us__second-text blue-text">with us today</div>

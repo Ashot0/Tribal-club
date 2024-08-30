@@ -15,7 +15,7 @@
 				<img
 					v-if="item.type === 'image'"
 					:src="require('@/assets/services-service/anim-gallery/' + item.src)"
-					alt=""
+					alt="gallery"
 				/>
 				<video
 					v-else
@@ -25,6 +25,7 @@
 					loop
 					playsinline
 					muted
+					alt="gallery"
 				/>
 			</div>
 		</div>

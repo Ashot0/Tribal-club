@@ -3,7 +3,7 @@
 		<img
 			class="image-full__pic"
 			:src="require('@/assets/Hero/' + picture)"
-			alt=""
+			alt="full"
 		/>
 	</div>
 </template>

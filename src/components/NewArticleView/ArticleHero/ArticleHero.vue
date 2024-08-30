@@ -3,7 +3,7 @@
 		<img
 			class="article__image"
 			:src="require('@/assets/NewsItems/' + item.image)"
-			alt=""
+			alt="article"
 		/>
 		<h1 class="article__title">
 			{{ item.title }}

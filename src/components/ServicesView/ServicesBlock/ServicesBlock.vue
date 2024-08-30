@@ -12,7 +12,7 @@
 				ref="boxBg"
 				class="services-block__bg-img"
 				:src="require('@/assets/services-bg/' + block.picture)"
-				alt=""
+				alt="background"
 			/>
 		</div>
 		<div class="services-block__wrapper">
@@ -29,7 +29,7 @@
 				<img
 					ref="image"
 					:src="require('@/assets/services-bg/' + block.picture)"
-					alt=""
+					alt="image"
 					:class="'services-block__image services-block__image' + index"
 				/>
 			</div>

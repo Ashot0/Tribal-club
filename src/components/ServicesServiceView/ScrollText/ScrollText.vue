@@ -8,7 +8,7 @@
 			<img
 				class="scroll-text-block__bg"
 				src="@/assets/services-service/scroll-text/1.png"
-				alt=""
+				alt="vegas"
 			/>
 		</div>
 	</div>

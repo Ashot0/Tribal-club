@@ -5,7 +5,7 @@
 		<CraftingCareersBlock />
 		<BrandMarketing />
 		<WorkWithUs />
-		<Footer />
+		<Footer class="home__footer" />
 	</div>
 </template>
 

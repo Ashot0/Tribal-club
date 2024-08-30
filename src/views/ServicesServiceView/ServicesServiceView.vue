@@ -4,7 +4,7 @@
 		<Header />
 		<div class="services-service__first">
 			<div class="services-service__bg" ref="serviceImg">
-				<img :src="getImageUrl(block.picture)" alt="" />
+				<img :src="getImageUrl(block.picture)" alt="background" />
 			</div>
 			<div class="services-service__right-text">
 				<p class="services-service__title" v-html="block.title"></p>
@@ -38,12 +38,12 @@
 				<p class="last__title" v-html="lastBlock.title"></p>
 				<p class="last__text">{{ lastBlock.text }}</p>
 			</div>
-			<img class="last__img" :src="getImageUrl(lastBlock.picture)" alt="" />
+			<img class="last__img" :src="getImageUrl(lastBlock.picture)" alt="bg" />
 			<div @click="goNext" class="last__bg">
 				<img
 					class="last__bg-img"
 					:src="getImageUrl(lastBlock.picture)"
-					alt=""
+					alt="bg-image"
 				/>
 			</div>
 		</div>

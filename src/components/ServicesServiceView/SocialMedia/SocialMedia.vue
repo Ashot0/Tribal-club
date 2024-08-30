@@ -1,6 +1,6 @@
 <template>
 	<div class="social-media">
-		<img src="@/assets/services-service/Social.png" alt="" />
+		<img src="@/assets/services-service/Social.png" alt="social" />
 	</div>
 </template>
 

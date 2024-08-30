@@ -1,11 +1,11 @@
 <template>
 	<div class="footer">
 		<router-link to="/">
-			<img class="footer__logo" src="@/assets/icons/logo.png" alt="" />
+			<img class="footer__logo" src="@/assets/icons/logo.png" alt="logo" />
 			<img
 				class="footer__logo-mobile"
 				src="@/assets/Hero/logoMobile.png"
-				alt=""
+				alt="logo"
 			/>
 		</router-link>
 		<div class="footer__links">
@@ -18,7 +18,7 @@
 			<img
 				class="footer__address-img"
 				src="../../assets/icons/map.png"
-				alt=""
+				alt="address"
 			/>232 E 47th St, NY 10017, USA
 		</p>
 	</div>
