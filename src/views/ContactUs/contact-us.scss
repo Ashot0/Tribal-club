@@ -12,8 +12,8 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	.footer,
-	.header {
+	&__footer,
+	&__header {
 		position: relative;
 	}
 	&__title {

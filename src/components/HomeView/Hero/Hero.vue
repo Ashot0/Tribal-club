@@ -1,6 +1,6 @@
 <template>
 	<div class="hero">
-		<Header />
+		<Header class="hero__header" />
 		<div class="hero__text hero__text_left">
 			<p
 				v-for="(text, index) in textArrLeft"

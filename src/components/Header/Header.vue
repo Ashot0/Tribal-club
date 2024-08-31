@@ -23,9 +23,7 @@
 				<option class="header__lang-option" value="EN">EN</option>
 				<option class="header__lang-option" value="EN">EN</option>
 			</select>
-			<router-link to="/contact">
-				<Button class="header__button" :text="'Contact us'" />
-			</router-link>
+				<Button class="header__button" @click.prevent="$router.push( `/contact` )" :text="'Contact us'" />
 		</div>
 	</div>
 </template>

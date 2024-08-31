@@ -1,9 +1,5 @@
 <template>
-	<button
-		class="button"
-		:class="!max || 'button__alternative'"
-		:type="type === null ? 'button' : type"
-	>
+	<button class="button" :class="!max || 'button__alternative'" :type="type">
 		{{ text }}
 		<div class="button__img">
 			<img src="@/assets/icons/ArrowRightDown.svg" alt="button" />
@@ -15,7 +11,10 @@
 export default {
 	props: {
 		text: String,
-		type: String,
+		type: {
+			type: String,
+			default: 'button',
+		},
 		max: Boolean,
 	},
 	setup() {

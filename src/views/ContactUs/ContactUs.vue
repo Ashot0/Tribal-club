@@ -1,7 +1,7 @@
 <template>
 	<div class="contact-us">
 		<ToTopBtn />
-		<Header />
+		<Header class="contact-us__header" />
 		<div class="contact-us__form-container">
 			<h1 class="contact-us__title">
 				We’re here <br />
@@ -10,7 +10,7 @@
 			<ContactForm :form="form" :onSubmit="handleSubmit" />
 			<ResponseMessage :message="responseMessage" />
 		</div>
-		<Footer />
+		<Footer class="contact-us__footer" />
 	</div>
 </template>
 

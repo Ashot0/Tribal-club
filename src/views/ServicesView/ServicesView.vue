@@ -1,7 +1,7 @@
 <template>
 	<div class="services">
 		<ToTopBtn />
-		<Header />
+		<Header class="services__header" />
 		<div class="services__scroll-container" ref="container">
 			<ServicesBlock
 				class="services-block"
@@ -11,7 +11,7 @@
 				:index="index"
 			/>
 		</div>
-		<Footer />
+		<Footer class="services__footer" />
 	</div>
 </template>
 
