@@ -121,14 +121,19 @@
 			text-transform: lowercase;
 		}
 	}
+	&__service-text {
+		margin: 40px 0;
+	}
 	&__scroll-text {
 		display: block;
+		margin: -24vh 0 24vh 0;
 		@media (max-width: 768px) {
 			display: none;
 		}
 	}
 	&__scroll-text_mobile {
 		display: none;
+		margin-bottom: 1em;
 		@media (max-width: 768px) {
 			display: block;
 		}

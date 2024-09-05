@@ -1,5 +1,4 @@
 .hero {
-	margin-bottom: 105vh;
 	position: relative;
 	height: 500vh;
 	width: 100vw;
@@ -27,6 +26,7 @@
 	&__block {
 		position: sticky;
 		height: 100vh;
+		bottom: 0;
 		&_1 {
 			z-index: 13;
 		}

@@ -16,11 +16,13 @@
 			</div>
 		</div>
 		<ServiceTextBlock
+			class="services-service__service-text"
 			title="It is all about you"
 			text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed"
 		/>
 		<ScrollGallery :galleryItems="galleryItems" />
 		<ServiceTextBlock
+			class="services-service__service-text"
 			title="It is all about you"
 			text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed"
 		/>
@@ -30,6 +32,7 @@
 			<ScrollTextMobile class="services-service__scroll-text_mobile" />
 		</div>
 		<ServiceTextBlock
+			class="services-service__service-text"
 			title="It is all about you"
 			text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed"
 		/>

@@ -1,8 +1,8 @@
 <template>
 	<div class="home">
 		<ToTopBtn />
-		<Hero />
-		<CraftingCareersBlock />
+		<Hero class="home__hero" />
+		<CraftingCareersBlock class="home__crafting-careers" />
 		<BrandMarketing />
 		<WorkWithUs />
 		<Footer class="home__footer" />

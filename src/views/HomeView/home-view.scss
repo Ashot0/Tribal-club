@@ -24,6 +24,12 @@
 	@media (min-width: 768px) {
 		font-size: 13.54167vw;
 	}
+	&__hero {
+		margin-bottom: 105vh;
+	}
+	&__crafting-careers {
+		margin-top: -200vh;
+	}
 	&__footer {
 		position: absolute;
 		bottom: 0;
