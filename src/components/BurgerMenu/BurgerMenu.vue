@@ -51,17 +51,12 @@
 				<img src="@/assets/icons/map.png" alt="map" />232 E 47th St, NY 10017,
 				USA
 			</a>
-			<router-link
+			<Button
 				class="burger-menu__button"
-				to="/contact"
-				@click.native="closeMenu"
-			>
-				<Button
-					class="burger-menu__button_in"
-					:max="isMax"
-					:text="'Contact us'"
-				/>
-			</router-link>
+				:max="isMax"
+				:text="'Contact us'"
+				@click="goToContact"
+			/>
 		</div>
 	</div>
 </template>
@@ -78,6 +73,7 @@ import {
 	onUnmounted,
 } from 'vue';
 import { gsap } from 'gsap';
+import { useRouter } from 'vue-router';
 
 export default defineComponent({
 	components: {
@@ -94,6 +90,13 @@ export default defineComponent({
 		},
 	},
 	setup(props) {
+		const router = useRouter();
+
+		const goToContact = () => {
+			router.push('/contact');
+			closeMenu();
+		};
+
 		const menu = ref(null);
 		const closeMenu = () => {
 			props.onClose();
@@ -133,7 +136,7 @@ export default defineComponent({
 			return windowWidth.value > 768;
 		});
 
-		return { menu, closeMenu, isMax };
+		return { menu, closeMenu, isMax, goToContact };
 	},
 });
 </script>
