@@ -14,7 +14,7 @@
 			:lastBlock="lastBlock"
 			@next-article="goNextArticle"
 		/>
-		<Footer />
+		<Footer class="article__footer" />
 	</div>
 </template>
 

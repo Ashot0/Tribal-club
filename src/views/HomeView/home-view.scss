@@ -14,25 +14,18 @@
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	&__footer {
-		position: absolute;
-		bottom: 0;
-	}
-}
-
-@media (min-width: 1920px) {
-	.home {
+	@media (min-width: 1920px) {
 		line-height: 0.73;
 	}
-}
-@media (min-width: 1024px) {
-	.home {
+	@media (min-width: 1024px) {
 		line-height: 0.77;
 		font-size: 10.41667vw;
 	}
-}
-@media (min-width: 768px) {
-	.home {
+	@media (min-width: 768px) {
 		font-size: 13.54167vw;
+	}
+	&__footer {
+		position: absolute;
+		bottom: 0;
 	}
 }

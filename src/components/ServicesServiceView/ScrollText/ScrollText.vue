@@ -1,7 +1,7 @@
 <template>
 	<div class="scroll-text-block">
 		<div class="scroll-text-block__wrapper">
-			<h1 class="transparent-text" ref="textBlock">
+			<h1 class="scroll-text-block__transparent-text" ref="textBlock">
 				what happens in Vegas<br />
 				does not stay in vegas
 			</h1>
@@ -36,7 +36,7 @@ export default {
 			tlst
 
 				.fromTo(
-					'.scroll-text-block .transparent-text',
+					'.scroll-text-block .scroll-text-block__transparent-text',
 					{
 						fontSize: '1em',
 						height: '100vh',
@@ -48,7 +48,7 @@ export default {
 						delay: 1,
 					}
 				)
-				.to('.scroll-text-block .transparent-text', {
+				.to('.scroll-text-block .scroll-text-block__transparent-text', {
 					opacity: 0,
 					duration: 10,
 				})

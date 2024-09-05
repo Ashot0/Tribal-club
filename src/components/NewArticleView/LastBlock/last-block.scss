@@ -2,6 +2,9 @@
 	position: relative;
 	width: 100vw;
 	overflow: hidden;
+	@media (min-width: 768px) {
+		font-size: 13.54167vw;
+	}
 	&__header {
 		font-size: 0.6em;
 		padding-bottom: 0.25em;
@@ -28,6 +31,9 @@
 		letter-spacing: 2px;
 		line-height: 118%;
 		text-transform: uppercase;
+		@media (max-width: 768px) {
+			font-size: 30px;
+		}
 	}
 	&__image {
 		width: 100%;
@@ -40,6 +46,9 @@
 		position: relative;
 		width: 50vw;
 		height: 50vh;
+		@media (max-width: 768px) {
+			width: 70vw;
+		}
 	}
 	&__description {
 		width: 50vw;
@@ -50,6 +59,10 @@
 		font-weight: 400;
 		line-height: 137%;
 		letter-spacing: 1px;
+		@media (max-width: 768px) {
+			font-size: 10px;
+			width: 70vw;
+		}
 		span {
 			position: relative;
 			z-index: 75;
@@ -57,7 +70,6 @@
 			text-decoration: underline;
 		}
 	}
-
 	&__date {
 		width: 50vw;
 		font-family: "Montserrat";
@@ -67,27 +79,7 @@
 		line-height: 118%;
 		letter-spacing: 0.8px;
 		text-transform: uppercase;
-	}
-}
-@media (min-width: 768px) {
-	.last-block {
-		&__hero {
-			margin-top: 15vh;
-		}
-		font-size: 13.54167vw;
-	}
-}
-@media (max-width: 768px) {
-	.last-block {
-		&__title {
-			font-size: 30px;
-		}
-		&__description {
-			font-size: 10px;
-		}
-		&__date,
-		&__image-wrapper,
-		&__description {
+		@media (max-width: 768px) {
 			width: 70vw;
 		}
 	}

@@ -1,7 +1,7 @@
 <template>
 	<div class="scroll-text-mobile-block">
 		<div class="scroll-text-mobile-block__wrapper">
-			<h1 class="transparent-text-mobile">
+			<h1 class="scroll-text-mobile-block__transparent-text-mobile">
 				what happens in Vegas<br />
 				does not stay in vegas
 			</h1>
