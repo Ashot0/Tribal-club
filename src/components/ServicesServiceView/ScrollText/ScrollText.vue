@@ -5,11 +5,7 @@
 				what happens in Vegas<br />
 				does not stay in vegas
 			</h1>
-			<img
-				class="scroll-text-block__bg"
-				src="@/assets/services-service/scroll-text/1.png"
-				alt="vegas"
-			/>
+			<img class="scroll-text-block__bg" src="@/assets/services-service/scroll-text/1.png" alt="vegas" />
 		</div>
 	</div>
 </template>
@@ -33,8 +29,9 @@ export default {
 				},
 				ease: 'linear',
 			});
-			tlst
 
+
+			tlst
 				.fromTo(
 					'.scroll-text-block .scroll-text-block__transparent-text',
 					{
@@ -62,7 +59,7 @@ export default {
 					'<'
 				);
 		});
-		onUnmounted(() => {});
+		onUnmounted(() => { });
 		return {
 			textBlock,
 		};

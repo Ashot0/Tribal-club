@@ -4,11 +4,7 @@
 		<div class="work-with-us__wrapper">
 			<div class="work-with-us__first-text">Start your journey</div>
 			<div class="work-with-us__second-text blue-text">with us today</div>
-			<Button
-				class="work-with-us__button"
-				:text="'Contact Us'"
-				@click="goToContact"
-			/>
+			<Button class="work-with-us__button" :text="'Contact Us'" @click="goToContact" />
 		</div>
 	</div>
 </template>

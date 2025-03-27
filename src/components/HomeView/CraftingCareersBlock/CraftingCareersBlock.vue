@@ -10,19 +10,30 @@
 				into global icons, providing comprehensive support to both athletes and
 				clubs to achieve their highest potential.
 			</div>
-			<Button class="crafting-careers__button" :text="'About us'" />
+			<Button class="crafting-careers__button" :text="'Our services'" @click="goToServices" />
 		</div>
 	</div>
 </template>
 
 <script>
+import { useRouter } from 'vue-router';
 import Button from '../../Button/Button.vue';
+
 export default {
 	components: {
 		Button,
 	},
+
 	setup() {
-		return {};
+		const router = useRouter();
+
+		const goToServices = () => {
+			router.push('/services');
+		};
+
+		return {
+			goToServices,
+		};
 	},
 };
 </script>

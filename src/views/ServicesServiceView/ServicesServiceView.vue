@@ -15,27 +15,20 @@
 				</p>
 			</div>
 		</div>
-		<ServiceTextBlock
-			class="services-service__service-text"
-			title="It is all about you"
-			text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed"
-		/>
+		<ServiceTextBlock class="services-service__service-text" title="It is all about you"
+			text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed" />
 		<ScrollGallery :galleryItems="galleryItems" />
-		<ServiceTextBlock
-			class="services-service__service-text"
-			title="It is all about you"
-			text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed"
-		/>
+		<ServiceTextBlock class="services-service__service-text" title="It is all about you"
+			text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed" />
 		<SocialMedia />
+
 		<div class="services-service__scroll-text-container">
 			<ScrollText class="services-service__scroll-text" />
 			<ScrollTextMobile class="services-service__scroll-text_mobile" />
 		</div>
-		<ServiceTextBlock
-			class="services-service__service-text"
-			title="It is all about you"
-			text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed"
-		/>
+
+		<ServiceTextBlock class="services-service__service-text" title="It is all about you"
+			text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed" />
 		<div v-if="block.id < 7" class="services-service__last last">
 			<div class="last__left-text">
 				<p class="last__title" v-html="lastBlock.title"></p>
@@ -43,11 +36,7 @@
 			</div>
 			<img class="last__img" :src="getImageUrl(lastBlock.picture)" alt="bg" />
 			<div @click="goNext" class="last__bg">
-				<img
-					class="last__bg-img"
-					:src="getImageUrl(lastBlock.picture)"
-					alt="bg-image"
-				/>
+				<img class="last__bg-img" :src="getImageUrl(lastBlock.picture)" alt="bg-image" />
 			</div>
 		</div>
 	</div>
@@ -233,6 +222,7 @@ export default {
 					scrub: true,
 				},
 			});
+
 			tlGallery
 				.to('.services-service .scroll-gallery__wrapper', {
 					ease: 'power2.inOut',
